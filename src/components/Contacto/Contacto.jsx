@@ -22,8 +22,7 @@ const Contacto = () => {
           <p><FaMapMarkerAlt/> Ubicación</p>
           <div className='mapa' id="mapa">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.
-              8888410154955!2d-66.85766542522101!3d-29.40280770181861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427da52a807f7c9%3A0xac2d095943ea7cd!2sStudio%20Cinco!5e0!3m2!1ses-419!2sar!4v1729203344162!5m2!1ses-419!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.8888410154955!2d-66.85766542522101!3d-29.40280770181861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427da52a807f7c9%3A0xac2d095943ea7cd!2sStudio%20Cinco!5e0!3m2!1ses-419!2sar!4v1729203344162!5m2!1ses-419!2sar"
               width="100%"
               height= "100%"
               style={{ border: 0 }}

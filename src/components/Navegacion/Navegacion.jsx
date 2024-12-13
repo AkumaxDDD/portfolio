@@ -1,5 +1,8 @@
 import './Navegacion.css';
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
+import { CgGym } from "react-icons/cg";
+import { IoMdContact } from "react-icons/io";
+import { GiFamilyHouse } from "react-icons/gi";
 import { useState } from 'react';
 
 const Navegacion = () => {
@@ -29,13 +32,13 @@ const Navegacion = () => {
           <FaHome /> Home
         </li>
         <li className='navitem' onClick={() => handleNavigation('actividades')}>
-          Actividades
+          <CgGym/>Actividades
         </li>
         <li className='navitem' onClick={() => handleNavigation('nosotros')}>
-          Nosotros
+          <GiFamilyHouse/>Nosotros
         </li>
         <li className='navitem' onClick={() => handleNavigation('contacto')}>
-          Contacto
+          <IoMdContact/>Contacto
         </li>
       </ul>
     </nav>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Actividades.css"; // Importamos el archivo CSS para estilos
+import './Actividades.css'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Actividades() {
@@ -21,7 +21,7 @@ function Actividades() {
   return (
     <>
       <div className="actividades-container">
-        <h1 className="titulo">Actividades</h1>
+        <h1 className="titulo-titulo">Actividades</h1>
         
         {/* Botón para desplazarse hacia la izquierda */}
         <button

@@ -1,5 +1,5 @@
 .Home {
-    width: 100vw; /* Cambiado a 100vw para no exceder el ancho de la pantalla */
+    width: 100vw;
     min-height: 100vh;
     background-image: url("../../assets/1.jpg");
     background-color: rgba(0, 0, 0, 0.7);
@@ -15,8 +15,8 @@
 
 .logo {
     position: absolute;
-    width: 20vw; /* Ajuste a vw para adaptarse a distintos tamaños de pantalla */
-    max-width: 100%; /* Asegura que no exceda el 100% del ancho disponible */
+    width: 30vw; /* Ajuste a vw para adaptarse a distintos tamaños de pantalla */
+    max-width: 400px; /* Limitar tamaño máximo en pantallas grandes */
     z-index: 1;
 }
 
@@ -28,7 +28,7 @@
     align-items: center;
     background-color: #7ed957;
     width: 25vw; /* Ajuste a vw para adaptarse a distintos tamaños de pantalla */
-    max-width: 100%; /* Asegura que no exceda el 100% del ancho disponible */
+    max-width: 150px;
     height: 8vh;
     max-height: 50px;
     border: none;
@@ -74,12 +74,10 @@
     position: absolute;
     padding: 0 5vw; /* Espacio lateral en pantallas pequeñas */
 }
-
 /* Media query para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
     .logo {
         width: 20vw;
-        max-width: 100%;
     }
 
     .unete {
@@ -95,15 +93,10 @@
 
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
-    .Home {
-        width: 100vw; /* Cambiado a 100vw para no exceder el ancho de la pantalla */
-        min-height: 100vh;
-    }
     .logo {
         position: absolute;
-        width: 60vw; /* Ajusta dinámicamente */
-        max-width: 100%; /* Asegura que no exceda el 100% del ancho disponible */
-        margin-left: 10vw;
+        width: 30vw; /* Ajusta dinámicamente */
+        margin-left: 40vw;
         margin-top: 5vh;
     }
 
@@ -118,17 +111,11 @@
         font-size: 10vw;
     }
 }
-
 @media (max-width: 425px) {
-    .Home {
-        width: 100vw; /* Cambiado a 100vw para no exceder el ancho de la pantalla */
-        min-height: 100vh;
-    }
     .logo {
         position: absolute;
-        width: 60vw; /* Ajusta dinámicamente */
-        max-width: 100%; /* Asegura que no exceda el 100% del ancho disponible */
-        margin-left: 20vw;
+        width: 30vw; /* Ajusta dinámicamente */
+        margin-left: 40vw;
         margin-top: 5vh;
     }
 
@@ -143,3 +130,4 @@
         font-size: 10vw;
     }
 }
+

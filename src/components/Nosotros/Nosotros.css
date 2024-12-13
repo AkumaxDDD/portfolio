@@ -1,76 +1,89 @@
 .nosotros-contenido {
-    margin: 0;
     width: 100vw;
     min-height: 100vh;
     background-image: url("../../assets/footerr.jpg");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
-    background-position: calc(30% - 0px) calc(5.5% + 10px);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-end;
     position: relative;
+}
+
+.nosotros-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    min-height: 100vh; 
+    padding: 20px; 
 }
 
 .titulo {
     color: #3f9f16;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     padding: 20px;
+    margin-bottom: 20px;
 }
 
-.nosotros-text {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    width: 80vw;
+.text-nosotros {
+    color: #fff;
+    font-size: clamp(1.5rem, 4vw, 2rem); 
+    width: 100%;
+    max-width: 800px; 
     margin-bottom: 10vh;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Borde negro */
-    letter-spacing: 2px;
-    text-align: justify;
-    line-height: 1.6; /* Mejora la legibilidad */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    padding: 0 20px; 
+    margin-left: 5%;
 }
 
-/* Contenedor del frente */
 .frente-contenedor {
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    height:80%;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20vw;
-    margin-bottom: 35vh;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10vw; 
 }
 
 .frente {
     width: 25vw;
     height: 55vh;
-    opacity: 0; /* Comienza invisible */
-    transform: translateX(50px); /* Desplazado hacia la derecha */
+    opacity: 0;
+    transform: translateX(50px);
     transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-right: 10%;
 }
 
 .frente.animacion-activa {
-    opacity: 1; /* Aparece completamente */
-    transform: translateX(0); /* Posición original */
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Estilos responsivos */
 @media (max-width: 1024px) {
     .titulo {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 6vw, 2.5rem);
     }
 
     .nosotros-text {
-        font-size: 1.2rem;
-        width: 90vw;
+        font-size: clamp(1.2rem, 5vw, 1.3rem);
+        width: 90%;
         margin-bottom: 8vh;
     }
 
     .frente-contenedor {
-        margin-right: 15vw;
-        margin-bottom: 25vh;
+        padding-right: 5vw;
+        bottom: 25vh;
     }
 
     .frente {
@@ -81,35 +94,26 @@
 
 @media (max-width: 768px) {
     .titulo {
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 6vw, 2rem);
     }
+
     .nosotros-contenido {
-        margin: 0;
-        background-repeat: repeat-y;
-        background-position:  0 -128%;
-        background-size: 100% 145%;
-        min-height: 100vh;
-        background-image: url("../../assets/footerr.jpg");
-        background-color: rgba(0, 0, 0, 0.6);
-        background-blend-mode: darken;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat; /* Cambio de repeat-y a no-repeat para evitar repeticiones innecesarias */
+        background-size: cover; /* Ajuste para asegurar una mejor respuesta visual */
         justify-content: flex-end;
-        position: relative;
     }
 
     .nosotros-text {
-        font-size: 1rem;
-        width: 95vw;
+        font-size: 1.2rem;
+        width: 95%;
         margin-bottom: 20vh;
     }
-/* 
+
     .frente-contenedor {
-        margin-right: 10vw;
-        margin-bottom: 55vh;
-        position: relative;
-    } */
+        padding-right: 5vw;
+        bottom: 55vh;
+    }
 
     .frente {
         width: 50vw;
@@ -118,25 +122,30 @@
 }
 
 @media (max-width: 425px) {
-    .nosotros-contenido {
-        margin: 0;
-    }
     .titulo {
         font-size: 1.8rem;
+        margin: 0 ;
     }
 
     .nosotros-text {
-        font-size: 0.8rem;
-        width: 90%;
-        margin-bottom: 5vh;
+        font-size: 0.2rem;
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    .text-nosotros{
+        margin-left: 0%;
     }
 
     .frente-contenedor {
-        margin-bottom: 65vh;
+        bottom: -21vh;
+        width: 100vw;
+        margin-right: 60px;
     }
 
     .frente {
         width: 60vw;
         height: 35vh;
     }
+
 }
