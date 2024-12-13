@@ -38,7 +38,7 @@ function Nosotros() {
           </h3>
       </div>
       <div className="frente-contenedor">
-        <img className="frente" src="/src/assets/frente.jpeg" alt="frente" />
+        <img className="frente" src="src\assets\frenteee.jpeg" alt="frente" />
       </div>
     </div>
   );

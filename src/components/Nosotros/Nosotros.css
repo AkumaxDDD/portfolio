@@ -104,10 +104,11 @@
         justify-content: flex-end;
     }
 
-    .nosotros-text {
+    .text-nosotros{
+        margin-top: 0;
+        max-width: 90%;
+        text-align: center;
         font-size: 1.2rem;
-        width: 95%;
-        margin-bottom: 20vh;
     }
 
     .frente-contenedor {
@@ -135,6 +136,12 @@
 
     .text-nosotros{
         margin-left: 0%;
+    }
+
+    .nosotros-text {
+        font-size: 1.1rem;
+        width: 95%;
+        margin-bottom: 20vh;
     }
 
     .frente-contenedor {
