@@ -1,0 +1,10 @@
+*{
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+}
+html,body{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
