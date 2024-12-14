@@ -45,7 +45,7 @@ function Actividades() {
       className="actividades-tarjeta"
       key={actividad.id}
       style={{
-        backgroundImage: `url(../../assets/${actividad.imagen})`,
+        backgroundImage: `url("/src/assets/${actividad.imagen}")`,
         backgroundBlendMode:'darken',
         backgroundColor:' rgba(0, 0, 0, 0.8)',
         backgroundPosition: "center",
