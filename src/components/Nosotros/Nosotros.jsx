@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import "./Nosotros.css";
 
@@ -12,10 +11,10 @@ function Nosotros() {
         if (entry.isIntersecting) {
           imagen.classList.add("animacion-activa");
         } else {
-          imagen.classList.remove("animacion-activa"); // Opcional, reinicia la animación
+          imagen.classList.remove("animacion-activa");
         }
       },
-      { threshold: 0.5 } // Se activa cuando el 50% de la sección está visible
+      { threshold: 0.5 }
     );
 
     observer.observe(section);
@@ -29,16 +28,16 @@ function Nosotros() {
         <h1 className="titulo">Nosotros</h1>
       </div>
       <div className="nosotros-text">
-          <h3 className="text-nosotros">
+        <h3 className="text-nosotros">
           StudioCinco es más que un gimnasio, es el corazón de nuestra casa.
           Aquí, tanto madre como hijo comparten su pasión por el deporte, 
           guiando a cada miembro con dedicación y experiencia. En este espacio familiar, 
           te invitamos a ser parte de nuestra comunidad, donde el bienestar y el compañerismo 
           son nuestro estilo de vida.
-          </h3>
+        </h3>
       </div>
       <div className="frente-contenedor">
-        <img className="frente" src="/src/assets/frente.jpeg" alt="frente" />
+        <div className="frente"></div>
       </div>
     </div>
   );

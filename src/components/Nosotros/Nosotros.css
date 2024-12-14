@@ -12,16 +12,17 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .nosotros-text {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    min-height: 100vh; 
-    padding: 20px; 
+    padding: 20px;
+    max-width: 800px;
 }
 
 .titulo {
@@ -34,34 +35,33 @@
 
 .text-nosotros {
     color: #fff;
-    font-size: clamp(1.5rem, 4vw, 2rem); 
+    font-size: clamp(1rem, 4vw, 2rem); 
     width: 100%;
     max-width: 800px; 
-    margin-bottom: 10vh;
+    margin-bottom: 3rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
     letter-spacing: 1px;
     line-height: 1.6;
-    padding: 0 20px; 
-    margin-left: 5%;
 }
 
 .frente-contenedor {
-    position: absolute;
     width: 100%;
-    height:80%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    padding-right: 10vw; 
 }
 
 .frente {
-    width: 25vw;
+    width: 100%;
+    max-width: 400px;
     height: 55vh;
+    background-image: url("/src/assets/frenteee.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     transform: translateX(50px);
     transition: transform 0.5s ease, opacity 0.5s ease;
-    margin-right: 10%;
 }
 
 .frente.animacion-activa {
@@ -76,18 +76,11 @@
     }
 
     .nosotros-text {
-        font-size: clamp(1.2rem, 5vw, 1.3rem);
-        width: 90%;
-        margin-bottom: 8vh;
-    }
-
-    .frente-contenedor {
-        padding-right: 5vw;
-        bottom: 25vh;
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
     }
 
     .frente {
-        width: 35vw;
+        max-width: 300px;
         height: 45vh;
     }
 }
@@ -98,54 +91,42 @@
     }
 
     .nosotros-contenido {
-        background-position: center center;
-        background-repeat: no-repeat; /* Cambio de repeat-y a no-repeat para evitar repeticiones innecesarias */
-        background-size: cover; /* Ajuste para asegurar una mejor respuesta visual */
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .nosotros-text {
         font-size: 1.2rem;
-        width: 95%;
-        margin-bottom: 20vh;
-    }
-
-    .frente-contenedor {
-        padding-right: 5vw;
-        bottom: 55vh;
+        width: 90%;
     }
 
     .frente {
-        width: 50vw;
+        max-width: 250px;
         height: 40vh;
     }
 }
 
 @media (max-width: 425px) {
     .titulo {
-        font-size: 1.8rem;
-        margin: 0 ;
+        font-size: 1.5rem;
     }
 
     .nosotros-text {
-        font-size: 0.2rem;
-        width: 95%;
-        margin-bottom: 0;
+        font-size: 1rem;
     }
 
-    .text-nosotros{
-        margin-left: 0%;
+    .text-nosotros {
+        text-align: center;
+        margin: 0;
     }
 
     .frente-contenedor {
-        bottom: -21vh;
-        width: 100vw;
-        margin-right: 60px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .frente {
-        width: 60vw;
+        width: 70%;
         height: 35vh;
     }
-
 }
