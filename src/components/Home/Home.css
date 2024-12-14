@@ -1,5 +1,5 @@
 .Home {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-image: url("../../assets/1.jpg");
     background-color: rgba(0, 0, 0, 0.7);
