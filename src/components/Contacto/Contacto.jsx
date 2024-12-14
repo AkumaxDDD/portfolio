@@ -8,7 +8,8 @@ import { FaAddressBook } from "react-icons/fa";
 const Contacto = () => {
   return (
     <>
-    <div className="contacto">
+    <div className='contenedor-contacto'>
+          <div className="contacto">
       <h1 className='contact-title'>¡Ponte en <br /> contacto hoy!</h1>
       </div>
       <footer className='footer'>
@@ -33,6 +34,8 @@ const Contacto = () => {
         </section>
         
       </footer>
+    </div>
+
     </>
     
     

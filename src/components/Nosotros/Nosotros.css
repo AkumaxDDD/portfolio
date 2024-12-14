@@ -97,7 +97,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -115,7 +115,7 @@
 
     .nosotros-text {
         font-size: 1rem;
-        width: 90%;
+        width: 90vw;
     }
 
     .frente {
@@ -127,7 +127,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -135,7 +135,7 @@
         justify-content: center;
     }
     .nosotros-contenido{
-        max-height: 100vh;
+        height: 100vh;
     }
     .titulo {
         font-size: 1.5rem;
@@ -159,6 +159,6 @@
 
     .frente {
         width: 70%;
-        height: 35vh;
+        height: 30vh;
     }
 }

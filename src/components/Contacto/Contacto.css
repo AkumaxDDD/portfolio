@@ -1,3 +1,9 @@
+.contenedor-contacto{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .contacto {
   width: 100vw;
   height: 70vh;
@@ -9,7 +15,6 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .contact-title {
