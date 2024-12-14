@@ -7,7 +7,7 @@ function Actividades() {
 
   useEffect(() => {
     const getActividades = async () => {
-      const response = await fetch(`http://localhost:3000/api/actividades`);
+      const response = await fetch(`https://studiocincoback.onrender.com/api/actividades`);
       if (response.ok) {
         const { apiactividades } = await response.json();
         setActividades(apiactividades || []);
@@ -38,20 +38,20 @@ function Actividades() {
         <div className="actividades-scroll">
           {/* Mapeamos las actividades */}
           {actividades.map((actividad) => {
-  console.log('Imagen base64:', actividad.imagen);  // Verifica si la imagen base64 es correcta
-  let image = `data:image/jpg;base64,${actividad.imagen.replace(/(\r\n|\n|\r)/gm, "")}`
+  // console.log('Imagen base64:', actividad.imagen);  // Verifica si la imagen base64 es correcta
+  // let image = `data:image/jpg;base64,${actividad.imagen.replace(/(\r\n|\n|\r)/gm, "")}`
   return (
     <div
       className="actividades-tarjeta"
       key={actividad.id}
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundBlendMode:'darken',
-        backgroundColor:' rgba(0, 0, 0, 0.8)',
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+      // style={{
+      //   backgroundImage: `url(${image})`,
+      //   backgroundBlendMode:'darken',
+      //   backgroundColor:' rgba(0, 0, 0, 0.8)',
+      //   backgroundPosition: "center",
+      //   backgroundSize: "cover",
         
-      }}
+      // }}
     >
     
     <h3 className="actividad-titulo">
