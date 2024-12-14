@@ -7,11 +7,7 @@ function Actividades() {
 
   useEffect(() => {
     const getActividades = async () => {
-<<<<<<< HEAD
-      const response = await fetch(`https://studiocincoback.onrender.com/api/actividades `);
-=======
       const response = await fetch(`https://studiocincoback.onrender.com/api/actividades`);
->>>>>>> master
       if (response.ok) {
         const { apiactividades } = await response.json();
         setActividades(apiactividades || []);

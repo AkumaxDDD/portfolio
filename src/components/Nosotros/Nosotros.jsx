@@ -37,10 +37,7 @@ function Nosotros() {
         </h3>
       </div>
       <div className="frente-contenedor">
-<<<<<<< HEAD
-=======
         <div className="frente"></div>
->>>>>>> master
       </div>
     </div>
   );

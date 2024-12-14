@@ -45,23 +45,10 @@
 }
 
 .frente-contenedor {
-<<<<<<< HEAD
-    position: absolute;
-    top: 15%;
-    right:0%;
-    width: 40vw;
-    height:70vh;
-    padding-right: 10vw; 
-    background-image: url("../../assets/frenteee.jpeg");
-    background-repeat: no-repeat;
-    background-size:cover ;
-    border-radius: 500px;
-=======
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> master
 }
 
 .frente {
@@ -88,26 +75,12 @@
     }
 
     .nosotros-text {
-<<<<<<< HEAD
-        font-size: clamp(1.2rem, 5vw, 1.3rem);
-        width: 100%; /* Ajuste del 110% a 100% */
-        margin-bottom: 8vh;
-    }
-
-    .frente-contenedor {
-        margin-top: 0;
-        margin-right: 0;
-        height: 30%;
-        width: 25%;
-        top: 20%;
-=======
         font-size: clamp(1.2rem, 4vw, 1.5rem);
     }
 
     .frente {
         max-width: 300px;
         height: 45vh;
->>>>>>> master
     }
 }
 
@@ -118,21 +91,6 @@
     }
 
     .nosotros-contenido {
-<<<<<<< HEAD
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .text-nosotros {
-        margin-top: 0;
-        max-width: 100%;
-        text-align: center;
-        font-size: 1.9rem;
-    }
-
-    .frente-contenedor {
-=======
         justify-content: center;
     }
 
@@ -143,7 +101,6 @@
 
     .frente {
         max-width: 250px;
->>>>>>> master
         height: 40vh;
         width: 40vw;
         top: 45%;
@@ -153,27 +110,6 @@
 
 @media (max-width: 500px) {
     .titulo {
-<<<<<<< HEAD
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .nosotros-text {
-        width: 100%;
-        margin-bottom: 20vh;
-    }
-
-    .text-nosotros {
-        margin-left: 0;
-        font-size: 1.6rem; /* Ajuste de tamaño legible */
-    }
-
-    .frente-contenedor {
-        height: 30vh;
-        width: 50vw;
-        top: 45%;
-    }
-=======
         font-size: 1.5rem;
     }
 
@@ -196,5 +132,4 @@
         width: 70%;
         height: 35vh;
     }
->>>>>>> master
 }
