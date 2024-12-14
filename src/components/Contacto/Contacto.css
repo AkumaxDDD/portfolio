@@ -84,7 +84,7 @@
 
 @media (max-width: 768px) {
   .contacto {
-    min-height: 70vh;
+    height: 70vh;
     background-image: url("../../assets/footerr.jpg");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
@@ -127,8 +127,12 @@
 }
 
 @media (max-width: 425px) {
+  .contacto{
+    height: 50vh;
+  }
   .contact-title {
       font-size: 4.5vh;
+      margin-left: 30vw;
   }
 
   .contact-info {
@@ -137,10 +141,11 @@
 
   .footer {
       flex-direction: column;
+      height: 50vh;
   }
 
   .mapa {
       max-width: 90vw;
-      height: 18vh;
+      height: 15vh;
   }
 }
