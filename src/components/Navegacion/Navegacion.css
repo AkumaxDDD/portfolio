@@ -4,7 +4,7 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
-    z-index: 5;
+    z-index: 3;
     background: none;
     border: none;
     font-size: 2rem;
@@ -14,7 +14,7 @@
   
   /* Estilo básico de la barra de navegación */
   nav {
-    position: sticky;
+    position: fixed;
     z-index: 2;
     right: 0;
   }
@@ -23,8 +23,7 @@
   .navlist {
     list-style: none;
     position: relative;
-    display: flex
-    ;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -32,7 +31,7 @@
     height: 10vh;
     right: 0;
     padding: 0;
-    margin: 0;
+    margin: 0 ;
   }
   
   /* Estilo de los elementos de navegación */
@@ -47,10 +46,11 @@
     opacity: 0;
     transform: translateY(50px);
     animation: buttonIn 2s forwards;
+    background-color: transparent;
   }
   
   .navitem:hover {
-    background-color: rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 0, 0, 0.90);
     background-blend-mode: darken;
   }
   
@@ -87,10 +87,11 @@
       position: fixed;
       top: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.);
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 65%;
+      border-radius: 50px 0 0 50px;
       flex-direction: column;
       width: 40%;
-      height: 80vh;
       justify-content: flex-start;
       align-items: flex-start;
       padding-top: 1rem;
@@ -100,6 +101,9 @@
   
     .navlist.open {
       transform: translateX(10%); /* Mostrar el menú */
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 65%;
+      border-radius: 50px 0 0 50px
     }
   
     .navitem {
@@ -109,24 +113,25 @@
     }
   
     .navitem:hover {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
   
   @media (max-width: 425px) {
     .menu-toggle {
       display: block; 
-      margin-right: 20px;
     }
   
     .navlist {
       position: fixed;
-      top: 0px;
+      top: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 65%;
+      border-radius: 50px 0 0 50px;
       flex-direction: column;
       width: 70%;
-      height: 80vh;
+      height: 65%;
       justify-content: flex-start;
       align-items: flex-start;
       padding-top: 2rem;
