@@ -12,16 +12,17 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .nosotros-text {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    min-height: 100vh; 
-    padding: 20px; 
+    padding: 20px;
+    max-width: 800px;
 }
 
 .titulo {
@@ -34,18 +35,17 @@
 
 .text-nosotros {
     color: #fff;
-    font-size: clamp(1.5rem, 4vw, 2rem); 
+    font-size: clamp(1rem, 4vw, 2rem); 
     width: 100%;
     max-width: 800px; 
-    margin-bottom: 10vh;
+    margin-bottom: 3rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
     letter-spacing: 1px;
     line-height: 1.6;
-    padding: 0 20px; 
-    margin-left: 5%;
 }
 
 .frente-contenedor {
+<<<<<<< HEAD
     position: absolute;
     top: 15%;
     right:0%;
@@ -56,15 +56,25 @@
     background-repeat: no-repeat;
     background-size:cover ;
     border-radius: 500px;
+=======
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> master
 }
 
 .frente {
-    width: 25vw;
+    width: 100%;
+    max-width: 400px;
     height: 55vh;
+    background-image: url("/src/assets/frenteee.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     transform: translateX(50px);
     transition: transform 0.5s ease, opacity 0.5s ease;
-    margin-right: 10%;
 }
 
 .frente.animacion-activa {
@@ -78,6 +88,7 @@
     }
 
     .nosotros-text {
+<<<<<<< HEAD
         font-size: clamp(1.2rem, 5vw, 1.3rem);
         width: 100%; /* Ajuste del 110% a 100% */
         margin-bottom: 8vh;
@@ -89,6 +100,14 @@
         height: 30%;
         width: 25%;
         top: 20%;
+=======
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+    }
+
+    .frente {
+        max-width: 300px;
+        height: 45vh;
+>>>>>>> master
     }
 }
 
@@ -99,6 +118,7 @@
     }
 
     .nosotros-contenido {
+<<<<<<< HEAD
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -112,6 +132,18 @@
     }
 
     .frente-contenedor {
+=======
+        justify-content: center;
+    }
+
+    .nosotros-text {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .frente {
+        max-width: 250px;
+>>>>>>> master
         height: 40vh;
         width: 40vw;
         top: 45%;
@@ -121,6 +153,7 @@
 
 @media (max-width: 500px) {
     .titulo {
+<<<<<<< HEAD
         font-size: 1.8rem;
         margin: 0;
     }
@@ -140,4 +173,28 @@
         width: 50vw;
         top: 45%;
     }
+=======
+        font-size: 1.5rem;
+    }
+
+    .nosotros-text {
+        font-size: 1rem;
+    }
+
+    .text-nosotros {
+        text-align: center;
+        margin: 0;
+    }
+
+    .frente-contenedor {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .frente {
+        width: 70%;
+        height: 35vh;
+    }
+>>>>>>> master
 }
