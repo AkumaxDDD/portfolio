@@ -52,7 +52,7 @@
     margin-top: -10vh;
     width: 80vw;
     max-width: 80vw;
-    height: 70vh;
+    height: 60vh;
     overflow-x: auto;
     display: flex;
     gap: 1rem;
@@ -93,7 +93,7 @@
     flex-shrink: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform, box-shadow;
-    width: 80vw; 
+    width: 20vw; 
     max-width: 300px;
     height: auto;
 }
@@ -130,7 +130,7 @@
     }
 
     .actividades-tarjeta {
-        width: 70vw;
+        width: 25vw;
     }
 }
 
@@ -169,13 +169,14 @@
 
     .actividades-tarjeta {
         width: 60vw;
-        height: 60vh;
+        height: 55vh;
         padding: 4px;
     }
 
     .actividades-scroll {
-        width: 100vw;
-        max-height: 80vh;
+        width: 65vw;
+        height: 60vh;
+        max-height: 60vh;
     }
 
     .actividad-titulo {
