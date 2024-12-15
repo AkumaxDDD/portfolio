@@ -7,7 +7,7 @@
 .contacto {
   width: 100vw;
   height: 60vh;
-  background-image: url("../../assets/footerr.jpg");
+  background-image: url("../../assets/secreataria.jpg");
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   background-position: center;
@@ -99,7 +99,7 @@
   }
   .contacto {
     height: 70vh;
-    background-image: url("../../assets/footerr.jpg");
+    background-image: url("../../assets/secreataria.jpg");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     background-position: calc(50%) calc(40% + 10px);
