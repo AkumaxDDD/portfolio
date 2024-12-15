@@ -162,4 +162,10 @@
         width: 70%;
         height: 30vh;
     }
+    .frente.animacion-activa {
+        opacity: 1;
+        transform: translateX(0);
+        margin-top: 0%;
+        height: 30vh;
+    }
 }
