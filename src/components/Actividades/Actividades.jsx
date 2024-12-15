@@ -44,14 +44,13 @@ function Actividades() {
     <div
       className="actividades-tarjeta"
       key={actividad.id}
-      // style={{
-      //   backgroundImage: `url(${image})`,
-      //   backgroundBlendMode:'darken',
-      //   backgroundColor:' rgba(0, 0, 0, 0.8)',
-      //   backgroundPosition: "center",
-      //   backgroundSize: "cover",
-        
-      // }}
+      style={{
+        backgroundImage: `url("/studiocinco/assets/${actividad.imagen}")`,
+        backgroundBlendMode: 'darken',
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
     >
     
     <h3 className="actividad-titulo">
