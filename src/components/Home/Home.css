@@ -1,5 +1,5 @@
 .Home {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-image: url("../../assets/1.jpg");
     background-color: rgba(0, 0, 0, 0.7);
@@ -68,7 +68,6 @@
     margin-bottom: 0;
     border-right: 2px solid;
     white-space: normal;
-
     word-wrap: break-word;
     overflow-wrap: break-word;
     position: absolute;

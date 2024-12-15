@@ -14,7 +14,7 @@ const Contacto = () => {
       </div>
       <footer className='footer'>
         <section className='contact-info'>
-            <h3><FaAddressBook/> Información de Contacto</h3> <br />
+            <h3><FaAddressBook/> Información de Contacto</h3>
             <p><FaMarker/>Dirección: Dardo de la Vega Díaz 395, F5302 La Rioja</p>
             <p><MdMail />Email: contacto@gym.com</p>
             <p><FaPhoneVolume />Teléfono: 03804 425 703</p>

@@ -58,7 +58,7 @@
 }
 
 .frente {
-    width: 50vw;
+    width: 55vw;
     max-width: 400px;
     height: 55vh;
     background-image: url("/src/assets/frenteee.jpeg");
@@ -75,7 +75,7 @@
     opacity: 1;
     transform: translateX(0);
     margin-top: 0%;
-    height: 40vh;
+    height: 55vh;
 }
 
 @media (max-width: 1024px) {
