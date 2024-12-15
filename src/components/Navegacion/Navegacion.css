@@ -23,11 +23,12 @@
   .navlist {
     list-style: none;
     position: relative;
+    background-color:  rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 80vw;
+    justify-content: center;
+    width: 100vw;
     height: 10vh;
     right: 0;
     padding: 0;
@@ -41,12 +42,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10vw;
     cursor: pointer;
     transition: 0.5s;
     opacity: 0;
     transform: translateY(50px);
     animation: buttonIn 2s forwards;
     background-color: transparent;
+
   }
   
   .navitem:hover {

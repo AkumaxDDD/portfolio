@@ -15,9 +15,9 @@
 
 .logo {
     position: absolute;
-    width: 30vw; /* Ajuste a vw para adaptarse a distintos tamaños de pantalla */
+    width: 15vw; /* Ajuste a vw para adaptarse a distintos tamaños de pantalla */
     max-width: 400px; /* Limitar tamaño máximo en pantallas grandes */
-    z-index: 1;
+    z-index: 2;
 }
 
 .unete {
