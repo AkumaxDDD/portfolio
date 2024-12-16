@@ -80,7 +80,7 @@
 
   .footer {
       flex-direction: column;
-      min-height: 40vh;
+      min-height: 60vh;
       justify-content: center;
   }
 
@@ -107,30 +107,33 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 0px;
   }
 
   .contact-title {
       font-size: 5vh;
-      position: absolute;
-      margin-left: 40vw;
-      margin-top: 35vh;
+      margin: 0;
   }
 
   .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: "Anton", sans-serif;
     font-style: italic;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1;
   }
 
   .footer {
       flex-direction: column;
+      height: 100%;
+      width: 100%;
   }
 
   .mapa {
@@ -142,15 +145,18 @@
 @media (max-width: 425px) {
   .contacto{
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contact-title {
       font-size: 4.5vh;
-      margin-left: 30vw;
+      margin: 0;
   }
 
   .contact-info {
       width: 100vw;
-      font-size: 0.5rem;
+      font-size: 0.8rem;
   }
 
   .footer {
@@ -160,8 +166,8 @@
   }
 
   .mapa {
-      width:90vw ;
-      max-width: 90vw;
+      width:80vw ;
+      max-width: 80vw;
       height: 18vh;
   }
   #ubicacion {
