@@ -134,26 +134,33 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 884px) {
     .titulo-titulo {
-        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
     }
 
     .scroll-btn {
-        font-size: 1.2rem;
-    }
-
-    .actividades-scroll {
-        width: 100vw;
-        padding: 0.5rem;
+        font-size: 1rem;
+        padding: 5px;
     }
 
     .actividades-tarjeta {
-        width: 80vw;
+        width: 60vw;
+        height: 55vh;
+        padding: 4px;
     }
 
-    .actividad-titulo, .actividad-dias, .actividad-horarios, .actividad-precio {
+    .actividades-scroll {
+        width: 65vw;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .actividad-titulo {
         font-size: 1rem;
+    } 
+    .actividad-dias, .actividad-horarios, .actividad-precio {
+        font-size: 0.8rem;
     }
 }
 

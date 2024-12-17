@@ -23,7 +23,7 @@
   .navlist {
     list-style: none;
     position: relative;
-    background-color:  rgba(0, 0, 0, 0.5);
+    background-color:  rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,13 +66,16 @@
   /* Media query para pantallas medianas (tabletas) */
   @media (max-width: 1024px) {
     .navlist {
-      justify-content: space-between; /* Mayor separación */
-      width: 80vw;
+      justify-content: flex-end; /* Mayor separación */
+      width: 100vw;
     }
   
     .navitem {
       width: 15vw; /* Ajuste para pantallas medianas */
       height: 10vh;
+      justify-content: center;
+      margin-left: 0vw;
+      margin-right: 5vw;
     }
   
     .navitem a {
