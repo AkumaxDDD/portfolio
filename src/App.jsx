@@ -1,30 +1,18 @@
-import Home from './components/Home/Home.jsx';
-import Actividades from './components/Actividades/Actividades.jsx';
-import Contacto from './components/Contacto/Contacto.jsx';
-import Nosotros from './components/Nosotros/Nosotros.jsx';
+import Stacks from './components/Stacks';
 import './App.css';
-import Navegacion from './components/Navegacion/Navegacion.jsx';
+import My from './components/My';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
 
 function App() {
-  
+  const [vista, setVista] = useState("Home");
+
   return (
-    <div className="App">
-      <Navegacion />
-      <div id="home" className="section">
-        <Home />
-      </div>
-      <div id="actividades" className="section">
-        <Actividades />
-      </div>
-      <div id="nosotros" className="section">
-        <Nosotros />
-      </div>
-      <div id="contacto" className="section">
-        <Contacto />
-      </div>
-    </div>
+    <>
+      <Navbar setVista={setVista} />
+      {vista === "Home" ? <My /> : <Stacks />}
+    </>
   );
-  
 }
 
 export default App;

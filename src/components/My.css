@@ -1,0 +1,50 @@
+.my{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+    height: 95vh;
+}
+.marco{
+    width: 30vw;
+    height: 60vh;
+    border-radius: 50%;
+    float: left; /* Para que el texto rodee el círculo */
+    shape-outside: circle(); /* Hacer que el texto rodee el círculo */
+    margin-right: 10vw; /* Espacio entre el círculo y el texto */
+    background-color: #ffc772;
+    border: solid 2px #570101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 41px 14px rgba(0,0,0,0.75);
+
+}
+.my-img{
+    width: 29vw;
+    height: 58vh;
+    border-radius: 50%;
+    background: url("/assets/yo.png") no-repeat;
+    background-position: 50% 3dvh;
+    background-size: contain;
+    justify-content: center;
+    background-color: rgb(14, 0, 0);
+    border: solid 2px #570101;
+}
+.container{
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    display: block;
+    align-items: flex-end;
+}
+.my-name{
+    margin-top: -1vh;
+    width: 60vw;
+    color: #ffc772;
+}
+.about-me{
+    width: 80vw;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: #ffe2b6;
+}
+
