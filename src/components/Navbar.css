@@ -1,9 +1,99 @@
-.navbar{
-    height: 5vh;
-    margin-left: 10vw;
-    width: 80vw;
+.navbar {
     display: flex;
-    flex-direction: row;
+    margin-bottom: 1rem;
     justify-content: space-evenly;
-    background-color: #310000;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    background-color: #200000;
 }
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Menú de navegación horizontal */
+  .menu-links {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .menu-links a {
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    border-bottom:1px solid #200000;
+    height: 5vh;
+    font-weight: 500;
+    color:  #ffc772;
+    text-decoration: inherit;
+  }
+  .menu-links a:hover {
+    color: #ffe2b6;
+    background-color: #310000;
+  }
+  
+  /* Ícono de menú hamburguesa (inicialmente oculto) */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 2rem;
+  }
+  
+  .burger span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #ffc772;
+    transition: all 0.3s ease;
+  }
+  
+  .burger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(1rem);
+  }
+  
+  .burger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-1rem);
+  }
+  
+  /* Responsividad para tablets y dispositivos pequeños */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: end;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .menu-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #200000;
+      width: 92vw;
+      padding: 1rem;
+    }
+  
+    .menu-links.show {
+      display: flex;
+      z-index: 4;
+      
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  

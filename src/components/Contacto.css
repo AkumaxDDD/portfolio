@@ -1,0 +1,207 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60dvh;
+    background: #57010112;
+}
+.contacto-title {
+    color: #ffc772;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}  
+ .marco-contacto {
+    background: #200000;
+    border-radius: 1.5rem;
+    border: 2px solid #ffc772;
+    box-shadow: 0 4px 32px #57010140, 0 1px 8px #57010126;
+    padding: 2rem 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+  
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+  .input-group label {
+    color: #ffc772;
+    font-size: 1rem;
+    margin-bottom: .2rem;
+    font-weight: 500;
+}
+.input-group input, .input-group textarea {
+    padding: .7rem 1rem;
+    border-radius: .7rem;
+    border: 1.5px solid #ffc772;
+    background: #310000;
+    color: #ffc772;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+    box-shadow: 0 1px 8px #57010114;
+}
+.input-group textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.input-group input, .input-group textarea {
+    padding: .7rem 1rem;
+    border-radius: .7rem;
+    border: 1.5px solid #ffc772;
+    background: #310000;
+    color: #ffc772;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+    box-shadow: 0 1px 8px #57010114;
+}
+.input-group input:focus {
+    border-color: #ffc772;
+    box-shadow: 0 1px 8px #ffc77214;
+}
+.submit-btn {
+    background: linear-gradient(90deg, #570101 60%, #ffc772);
+    color: #ffe2b6;
+    border: none;
+    border-radius: .7rem;
+    padding: .8rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .5s, transform .5s;
+    box-shadow: 0 2px 8px #57010126;
+}
+.submit-btn:hover {
+    background: linear-gradient(90deg, #ffc772 60%, #570101);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #570101;
+}
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  /* Mensajes de estado */
+.status-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+  animation: slideDown 0.3s ease-out;
+}
+
+.status-message svg {
+  flex-shrink: 0;
+}
+
+.status-message.success {
+  position: absolute;
+  background-color: rgba(60, 173, 65, 0.95);
+  color: #2b0605;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  width: 80vw;
+}
+
+.status-message.error {
+    position: absolute;
+    background-color: rgba(211, 47, 47, 0.95);
+    color: #2b0605;
+    border: 1px solid rgba(211, 47, 47, 0.3);
+    width: 80vw;
+}
+
+/* Ícono de correo */
+.email-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  color: #ffc772;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background: rgba(255, 199, 114, 0.1);
+}
+
+.email-icon:hover {
+  color: #ffb74d;
+  background: rgba(255, 199, 114, 0.2);
+  transform: translateY(-1px);
+}
+
+.email-icon svg {
+  display: block;
+}
+
+/* Animación */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botón de enviar con ícono */
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffe2b6;
+  background: linear-gradient(90deg, #570101 60%, #ffc772);
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #ffc772 60%, #570101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #570101;
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover svg {
+  transform: translateX(3px);
+}
